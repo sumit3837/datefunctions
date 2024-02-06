@@ -21,5 +21,6 @@ split_date = split(df["DOB"],"[\\\\/]")
 df_final=df.withColumn("Year",split_date.getItem(0)) \
         .withColumn("Month",split_date.getItem(1)) \
         .withColumn("Date",split_date.getItem(2))
-
-df_final.show()
+df_final.count()
+df_new =df_final.select("Year","Month","Date")
+df_new.show()
