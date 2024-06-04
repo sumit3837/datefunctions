@@ -39,4 +39,4 @@ result = factorial(number)
 print(f"factorial of {number} is {result}")
 
 '''
-print("line added on 5th june 2024")
+print("line added on 4th june 2024")
